@@ -5,18 +5,21 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc ",
-    "dev": "tsnd src/server.ts",
+    "dev": "tsnd --exit-child src/server.ts",
     "db": "prisma generate",
-    "mg": "prisma migrate dev"
+    "mg": "prisma migrate dev",
+    "studio": "prisma studio"
   },
   "keywords": [],
   "author": "",
   "description": "",
   "dependencies": {
     "@prisma/client": "^4.3.1",
+    "cors": "^2.8.5",
     "express": "^4.18.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
     "@types/node": "^18.7.16",
     "prisma": "^4.3.1",
