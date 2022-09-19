@@ -9,7 +9,7 @@ interface Game {
   id: string;
   title: string;
   bannerUrl: string;
-  _count: {
+  count: {
     ads: number;
   };
 }
@@ -43,7 +43,7 @@ function App() {
               key={game.id}
               title={game.title}
               bannerUrl={game.bannerUrl}
-              adsCount={game._count.ads}
+              adsCount={game.count.ads}
             />
           );
         })}
